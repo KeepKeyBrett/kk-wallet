@@ -8,3 +8,8 @@
  ::initialize-db
  (fn [_ _]
    db/default-db))
+
+(re-frame/reg-event-db
+  :add-account
+  (fn [db [_ new-value]]
+    (assoc db :accounts (conj (:accounts db) {:name "Shitcoin"}))))

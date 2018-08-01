@@ -1,4 +1,7 @@
 (ns kk-wallet.db)
 
 (def default-db
-  {:name "re-frame"})
+  {:name "KeepKey, Bitch"
+   :device nil
+   :accounts [{:name "Bitcoin"}
+              {:name "Litecoin"}]})
